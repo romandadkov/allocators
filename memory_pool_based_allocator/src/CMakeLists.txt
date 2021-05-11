@@ -2,8 +2,10 @@ add_library(static_pool_allocator)
 
 target_sources(static_pool_allocator
   PRIVATE
+    bucket.cpp
     static_pool_allocator.cpp
   PUBLIC
+    bucket.h
     static_pool_allocator.h
   )
 
