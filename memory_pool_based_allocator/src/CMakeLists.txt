@@ -6,6 +6,7 @@ target_sources(static_pool_allocator
     static_pool_allocator.cpp
   PUBLIC
     bucket.h
+    memory_pool.h
     static_pool_allocator.h
   )
 
