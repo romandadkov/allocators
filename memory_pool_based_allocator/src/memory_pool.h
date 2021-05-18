@@ -2,6 +2,7 @@
 
 #include "bucket.h"
 
+#include <algorithm>
 #include <array>
 #include <tuple>
 
@@ -109,7 +110,7 @@ namespace memory_pool
             ++index;
         }
 
-        sort(deltas.begin(), deltas.end()); // std:::sort is allowed to allocate
+        std::sort(deltas.begin(), deltas.end()); // std:::sort is allowed to allocate
 
         for (const auto &d : deltas)
         {
@@ -127,7 +128,7 @@ namespace memory_pool
     {
         auto &pool = get_instance<id>();
 
-        for (const auto &bucket : pool)
+        for (auto &bucket : pool)
         {
             if (bucket.belongs(ptr))
             {

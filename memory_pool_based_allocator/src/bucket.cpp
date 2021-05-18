@@ -57,12 +57,18 @@ std::size_t bucket::find_contiguous_blocks(std::size_t n) const noexcept
     return 0;
 }
 
-void set_blocks_in_use(std::size_t index, std::size_t n) noexcept
+void bucket::set_blocks_in_use(std::size_t index, std::size_t n) noexcept
 {
     // todo:
 }
 
-void set_blocks_free(std::size_t index, std::size_t n) noexcept
+void bucket::set_blocks_free(std::size_t index, std::size_t n) noexcept
 {
     // todo:
+}
+
+bool bucket::belongs(void *ptr) const noexcept
+{
+    // todo:
+    return true;
 }
