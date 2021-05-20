@@ -119,7 +119,6 @@ namespace memory_pool
                 return ptr;
             }
         }
-
         throw std::bad_alloc{};
     }
 

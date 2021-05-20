@@ -3,6 +3,7 @@
 #include <cassert>
 #include <memory>
 #include <memory_resource>
+#include <iostream>
 
 #include "memory_pool.h"
 
