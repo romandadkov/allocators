@@ -3,11 +3,8 @@
 #include <cassert>
 #include <memory>
 #include <memory_resource>
-#include <iostream>
 
 #include "memory_pool.h"
-
-using allocator_type = std::allocator<int>;
 
 namespace instrument
 {
