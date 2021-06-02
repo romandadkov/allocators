@@ -1,1 +1,3 @@
 ### allocators
+
+memory_pool_based_allocator based on [presentation](https://github.com/CppCon/CppCon2020/blob/main/Presentations/practical_memory_pool_based_allocators_for_modern_cpp/practical_memory_pool_based_allocators_for_modern_cpp__misha_shalem__cppcon_2020.pdf)

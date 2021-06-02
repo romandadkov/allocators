@@ -98,7 +98,6 @@ void bucket::set_blocks_free(std::size_t index, std::size_t n) noexcept
 
 bool bucket::belongs(void *ptr) const noexcept
 {
-    // todo:
     if ((unsigned long long)ptr >= (unsigned long long)m_data &&
         (unsigned long long)ptr < (unsigned long long)m_data + (unsigned long long)(BlockSize * BlockCount))
     {
